@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUX Autó</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.svg">
+
+  <!-- Application components -->
+  <link rel="stylesheet" href="./components/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./components/font-awesome/6.1.1/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+
+  <!-- Style -->
+  <style>
+    .card-thumbnail {
+      max-height: 200px;
+      overflow: hidden;
+      transition: 1s;
+      transition-delay: 1s;
+    }
+    .dropdown-menu {
+      max-height: 300px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    .card-thumbnail:hover {
+      transform: scale(1.05);
+    }
+    .currency:before { 
+      content:'HUF '; 
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scrollable container -->
+  <div class="scrollable-container">
+
+    <!-- Main -->
+    <main id="top-page" class="position-absolute w-100">
+
+      <!-- Cars -->
+      <div class="container py-5">
+
+        <!-- Row -->
+        <div class="row">
+
+          <!-- Title -->
+          <div class="col-12">
+            <h2 class="display-6 text-muted">
+              Tekintse meg autóink széles választékát:
+            </h2>
+          </div>
+
+          <!-- Trabant - tuning -->
+          <div id="trabant-tuning" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/trabant-tuning.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Trabant - tuning
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>1982</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>bordó</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>1.8L V-4 turbo</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>180</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>250</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>7.4</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>230</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">8 000 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>2 000 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>27 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">25 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Porsche 911 Turbo Cabrio -->
+          <div id="porsche-911-turbo-cabrio" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/porsche-911-turbo-cabrio.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Porsche 911 Turbo Cabrio
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>kék</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>3.0L twin-Turbo V-6 boxer</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>379</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>800</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>3.2</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>317</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">41 946 690</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>15 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>11 900</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">30 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- BMW M5 -->
+          <div id="bmw-m5" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/bmw-m5.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                BMW M5
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>zöld</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>4.4L V8 Turbo</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>627</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>750</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>3.2</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>305</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">39 165 070</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>10 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>1 200</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">33 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Audi RS 7 Sportback -->
+          <div id="audi-rs-7-sportback" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/audi-rs-7-sportback.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Audi RS 7 Sportback
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fekete</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>4.0L V8 biturbo</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>591</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>590</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>3.5</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>305</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">44 315 688</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>6 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>3 300</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">35 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Ferrari 812 SuperFast -->
+          <div id="ferrari-812-superfast" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/ferrari-812-superfast.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Ferrari 812 SuperFast
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>ezüst</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>6.5L V12</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>788</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>529</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>339</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">124 133 580</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>500</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>13 588</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">43 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Ford GT -->
+          <div id="ford-gt" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/ford-gt.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Ford GT
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fehér</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>3.5L EcoBoost V6</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>647</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>550</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>3</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>348</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">185 274 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>141</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>17 890</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">48 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mercedes-AMG One -->
+          <div id="mercedes-amg-one" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/mercedes-amg-one.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Mercedes-AMG One
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fehér</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>4.0L V8 biturbo</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1021</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>-</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.6</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>349</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">1 007 890 560</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>275</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>21 550</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">51 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Lamborghini Sian Roadster -->
+          <div id="lamborghini-sian-roadster" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/lamborghini-sian-roadster.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Lamborghini Sian Roadster
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>arany</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>6.5L V-12</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>819</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>531</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.7</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>350</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">1 333 972 800</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>63</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>5 600</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">55 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Rimac Concept One -->
+          <div id="rimac-concept-one" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/rimac-concept-one.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Rimac Concept One
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>szürke</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>elektromos</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>elektromos</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 224</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 180</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>356</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">132 656 184</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>28 200</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">60 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Pagani Huayra BC Roadster -->
+          <div id="pagani-huayra-bc-roadster" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/pagani-huayra-bc-roadster.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Pagani Huayra BC Roadster
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>kék</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>6.0L Twin-Turbo V-12</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>791</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>775</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>380</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">1 259 863 200</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>260</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>7 800</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">65 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Koenigsegg Gemera -->
+          <div id="koenigsegg-gemera" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/koenigsegg-gemera.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Koenigsegg Gemera
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>szürke</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>2.0L Twin-Turbo V-3</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>Hibrid</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>2 581</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 700</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>1.9</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>401</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">185 274 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>300</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>14 900</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">70 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Aston Martin Valkyrie -->
+          <div id="aston-martin-valkyrie" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/aston-martin-valkyrie.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Aston Martin Valkyrie
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>szürke</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>6.5L V-12</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>664</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 160</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.5</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>402</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">1 111 644 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>100</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>22 300</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">72 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- McLaren Speedtail -->
+          <div id="mclaren-speedtail" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/mclaren-speedtail.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                McLaren Speedtail
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>kék</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>4.0L Twin-Turbo V-8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>hibrid</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 035</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>848</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.5</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>402</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">815 205 600</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>106</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>3 500</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">75 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bugatti Veyron -->
+          <div id="bugatti-veyron" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/bugatti-veyron.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Bugatti Veyron
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fekete</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>8.0L quad-turbo V-16</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>987</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>922</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>409</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">629 931 600</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>178</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>31 500</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">80 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- SSC Ultimate Aero -->
+          <div id="ssc-ultimate-aero" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/ssc-ultimate-aero.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                SSC Ultimate Aero
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>ezüst</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>6.3L twin-turbo V-8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 183</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 094</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.7</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>412</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">222 328 800</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>24</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>15 600</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">85 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Koenigsegg Agera R -->
+          <div id="koenigsegg-agera-r" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/koenigsegg-agera-r.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Koenigsegg Agera R
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>kék</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>5.0L twin-turbo V-8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 124</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>885</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.7</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>418</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">741 096 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>18</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>24 700</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">90 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bugatti Chiron -->
+          <div id="bugatti-chiron" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/bugatti-chiron.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Bugatti Chiron
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>ezüst</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>8.0L twin-turbo V-16</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 479</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 180</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.6</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>420</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">1 111 644 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>560</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>19 100</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">100 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bugatti Veyron Super Sport -->
+          <div id="bugatti-veyron-super-sport" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/bugatti-veyron-super-sport.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Bugatti Veyron Super Sport
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fekete</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>8.0L twin-turbo V-16</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 184</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 106</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.6</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>431</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">1 000 479 600</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>30</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>2 750</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">120 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hennessey Venom GT -->
+          <div id="hennessey-venom-gt" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/hennessey-venom-gt.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Hennessey Venom GT
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fehér</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>7.0L twin-turbo V-8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 244</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 155</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.7</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>435</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">444 657 600</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>25</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>4 300</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">135 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Koenigsegg Agera RS -->
+          <div id="koenigsegg-agera-rs" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/koenigsegg-agera-rs.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Koenigsegg Agera RS
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fehér</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>5.0L twin-turbo V-8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 341</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 160</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.6</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>447</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">926 370 000</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>25</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>1 500</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">145 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- SSC Tuatara -->
+          <div id="ssc-tuatara" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/ssc-tuatara.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                SSC Tuatara
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fehér</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>6.4L twin-turbo V-8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 750</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 160</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.6</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>455</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">704 041 200</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>25</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>9 800</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">190 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bugatti Chiron Super Sport 300+ -->
+          <div id="bugatti-chiron-super-sport-300-plus" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/bugatti-chiron-super-sport-300-plus.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Bugatti Chiron Super Sport 300+
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fekete</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>8.0L quad-turbo V-16</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 578</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 180</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.6</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>489</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">1 408 082 400</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>30</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>3 300</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">200 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hennessey Venom F5 -->
+          <div id="hennessey-venom-f5" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/hennessey-venom-f5.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Hennessey Venom F5
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>sárga</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>6.6L twin-turbo V-8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 817</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 193</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.4</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>500</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">666 986 400</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>24</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>6 600</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">220 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+
+          <!-- Koenigsegg Jesko Absolut -->
+          <div id="koenigsegg-jesko-absolut" 
+               class="card-car col-12 col-md-6 col-lg-4 mx-auto mt-3">
+
+            <!-- Card -->
+            <div class="card-box float-start border rounded-3 shadow p-3 me-3">
+
+              <!-- Image -->
+              <div class="card-thumbnail rounded-3">
+                <img src="./image/cars/koenigsegg-jesko-absolut.webp" 
+                     class="img-fluid" 
+                     alt="car">
+              </div>
+
+              <!-- Name -->
+              <h5 class="my-3 text-primary fw-bold">
+                Koenigsegg Jesko Absolut
+              </h5>
+
+              <!-- Properties -->
+              <ul class="text-secondary text-muted ps-3">
+                <li>
+                  <span class="fw-bold me-1">Évjarat:</span>
+                  <span>2022</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Szín:</span>
+                  <span>fehér</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Motor:</span>
+                  <span>5.0L twin-turbo V-8</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Üzemanyag:</span>
+                  <span>benzin</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Lóerő:</span>
+                  <span>1 600</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Nyomaték:</span>
+                  <span>1 180</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyorsulás (0-100km/s):</span>
+                  <span>2.3</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Végsebesség (km/h):</span>
+                  <span>531</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Alapár:</span>
+                  <span class="currency">1 445 137 200</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Gyártva (darab):</span>
+                  <span>11</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Kilométer állása:</span>
+                  <span>7 430</span>
+                </li>
+                <li>
+                  <span class="fw-bold me-1">Bérleti díj/nap:</span>
+                  <span class="currency">250 000</span>
+                </li>
+              </ul>
+              <button class="btn btn-sm btn-primary float-end px-4 shadow-sm"
+                      onclick="alert('Részletek!')">
+                Érdekel >>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="availability" 
+              class="container-fluid bg-light mt-3 pt-3">
+
+        <!-- School -->
+        <div class="row">
+        
+          <!-- Logo -->
+          <div class="col col-3 col-xl-1">
+            <div class="logo bg-img bg-img-contain float-end"></div>
+          </div>
+        
+          <!-- Name -->
+          <ul class="col col-9 col-xl-5 text-start list-unstyled mb-0 mt-1">
+            <li>
+              <h5 class="fst-italic mb-1">
+                Hódmezővásárhelyi SZC
+              </h5>
+            </li>
+            <li>
+              <h6 class="fst-italic mb-1">
+                Makói Návay Lajos Technikum és Kollégium
+              </h6>
+            </li>
+            <li class="fw-lighter fs-075">
+              OM azonosító: 203039/007
+            </li>
+          </ul>
+        
+          <!-- Contact -->
+          <div class="col col-12 col-md-6 col-xl-3 ps-5 ps-md-0 text-lg-start mt-3 mt-xl-0">
+          
+            <!-- Contact lis -->
+            <ul class="text-start list-unstyled mb-0 ms-md-5">
+            
+              <!-- Address -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   target="_blank" title="google maps"
+                   href="https://www.google.com/maps/place/HSZC+Mak%C3%B3i+N%C3%A1vay+Lajos+Technikum+%C3%A9s+Koll%C3%A9gium/@46.2136337,20.4733232,17z/data=!3m1!4b1!4m5!3m4!1s0x4744f602b445c0b9:0x6ecc2b88ac500ef!8m2!3d46.21363!4d20.4755119">
+                  <i class="fas fa-home me-2"></i>
+                  <span>6900 Makó, Posta u. 4-6</span>
+                </a>
+              </li>
+            
+              <!-- Email -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   target="_blank" title="email" 
+                   href="mailto:kerititkarsag@gmail.com">
+                  <i class="fas fa-envelope me-2"></i>
+                  <span>kerititkarsag@gmail.com</span>
+                </a>
+              </li>
+            
+              <!-- Phone -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   target="_blank" title="phone" 
+                   href="tel:+3662510917">
+                  <i class="fas fa-phone me-2"></i>
+                  <span>(+36 62) 510-917</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
+          <!-- Web/Social media -->
+          <div class="col col-12 col-md-6 col-xl-3 ps-5 ps-md-0 text-lg-start mt-0 mt-md-3 mt-xl-0">
+          
+            <!-- Web/Social media list -->
+            <ul class="text-start list-unstyled mb-0">
+            
+              <!-- Web -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   href="https://www.keri.mako.hu/" 
+                   title="web" target="_blank">
+                  <i class="fas fa-globe me-2"></i>
+                  <span>www.keri.mako.hu</span>
+                </a>
+              </li>
+            
+              <!-- Facebook -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   href="https://www.facebook.com/makokeri/" 
+                   title="facebook" target="_blank">
+                  <i class="fab fa-facebook-f me-2"></i>
+                  <span>makokeri</span>
+                </a>
+              </li>
+            
+              <!-- Instagram -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   href="http://www.instagram.com/makokeri/" 
+                   title="instagram" target="_blank">
+                  <i class="fab fa-instagram me-2"></i>
+                  <span>makokeri</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright row mt-0">
+          <hr class="mt-3 mb-1">
+          <p class="fw-lighter fs-075 mb-2 w-100 text-center"> 
+            &copy; Copyright&nbsp;&nbsp;2021-2022 Keri Informatika, Makó
+          </p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Header -->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+      <!-- Container -->
+      <div class="container-fluid">
+
+        <!-- Title -->
+        <a class="navbar-brand fs-6 fw-bold fst-italic text-muted px-2" 
+           href="#top-page">
+          <span id="lux-name" class="fs-5 me-1">LUX</span>
+          <span>Autó</span>
+        </a>
+
+        <!-- Hamburger icon -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mt-2 mt-md-0">
+
+            <!-- Menu item -->
+            <li class="nav-item px-2">
+              <a class="nav-link" href="home.html">
+                <i class="fas fa-home fs-5 me-1"></i>
+                <span>Kezdőlap</span>
+              </a>
+            </li>
+
+            <!-- Menu dropdown item -->
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" 
+                 href="#" 
+                 id="navbarCars" 
+                 role="button" 
+                 data-bs-toggle="dropdown" 
+                 aria-expanded="false">
+                <i class="fas fa-car fs-5 me-1"></i>
+                <span>Autók</span>
+              </a>
+
+              <!-- Cars -->
+              <ul class="dropdown-menu" aria-labelledby="navbarCars">
+                <li>
+                  <a class="dropdown-item" 
+                     href="#aston-martin-valkyrie">
+                    Aston Martin Valkyrie
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#audi-rs-7-sportback">
+                    Audi RS 7 Sportback
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#bmw-m5">
+                    BMW M5
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#bugatti-chiron">
+                    Bugatti Chiron
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#bugatti-chiron-super-sport-300-plus">
+                    Bugatti Chiron Super Sport 300+
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#bugatti-veyron">
+                    Bugatti Veyron
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#bugatti-veyron-super-sport">
+                    Bugatti Veyron Super Sport
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#ferrari-812-superfast">
+                    Ferrari 812 SuperFast
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#ford-gt">
+                    Ford GT
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#hennessey-venom-f5">
+                    Hennessey Venom F5
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#hennessey-venom-gt">
+                    Hennessey Venom GT
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#koenigsegg-agera-r">
+                    Koenigsegg Agera R
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#koenigsegg-agera-rs">
+                    Koenigsegg Agera RS
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#koenigsegg-gemera">
+                    Koenigsegg Gemera
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#koenigsegg-jesko-absolut">
+                    Koenigsegg Jesko Absolut
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#lamborghini-sian-roadster">
+                    Lamborghini Sian Roadster
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#mclaren-speedtail">
+                    McLaren Speedtail
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#mercedes-amg-one">
+                    Mercedes-AMG One
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#pagani-huayra-bc-roadster">
+                    Pagani Huayra BC Roadster
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#porsche-911-turbo-cabrio">
+                    Porsche 911 Turbo Cabrio
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#rimac-concept-one">
+                    Rimac Concept One
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#ssc-tuatara">
+                    SSC Tuatara
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#ssc-ultimate-aero">
+                    SSC Ultimate Aero
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" 
+                     href="#trabant-tuning">
+                    Trabant - tuning
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Menu item -->
+            <li class="nav-item px-2">
+              <a class="nav-link" href="rent.html">
+                <i class="fas fa-address-card fs-5 me-1"></i>
+                <span>Bérlés</span>
+              </a>
+            </li>
+
+            <!-- Menu item -->
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#availability">
+                <i class="fas fa-map-marker-alt fs-5 me-1"></i>
+                <span>Elérhetőség</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Application components -->
+  <script src="./components/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

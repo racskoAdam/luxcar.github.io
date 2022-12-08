@@ -1,0 +1,12 @@
+{
+    "name": "Felhsználó",
+    "db": "luxcar",
+    "tbl": "user",
+    "query": "SELECT `id`, `name` FROM `user` ORDER BY `id`",
+    "label": [
+      "Azonosító",
+      "Név",
+      "típus",
+      ""
+    ]
+  }

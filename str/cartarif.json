@@ -1,0 +1,12 @@
+{
+    "name": "autó",
+    "db": "luxcar",
+    "tbl": "car_tariff",
+    "query": "SELECT `id`, `name` FROM `user` ORDER BY `id`",
+    "label": [
+      "Azonosító",
+      "tariff",
+      "Autóazonosító",
+      "valid"
+    ]
+  }

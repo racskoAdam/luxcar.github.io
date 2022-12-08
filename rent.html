@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUX Autó</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.svg">
+
+  <!-- Application components -->
+  <link rel="stylesheet" href="./components/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./components/font-awesome/6.1.1/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./css/app.css">
+
+  <!-- Style -->
+  <style>
+    form {
+      min-width: 20rem !important;
+    }
+    button.btn-common {
+      min-width: 160px !important;
+    }
+    .club-member-img {
+      height: 100px;
+      width: auto;
+    }
+    @media (min-width: 768px) {
+      form#register-form,
+      form#rent-form {
+        min-width: 30rem !important;
+      }
+      .club-member-img {
+        height: 125px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .club-member-img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scrollable container -->
+  <div class="scrollable-container">
+
+    <!-- Main -->
+    <main id="top-page" class="position-absolute w-100">
+
+      <!-- Container -->
+      <div class="container">
+
+        <!-- Row title -->
+        <div class="row mt-4 text-center">
+
+          <!-- Grid -->
+          <div class="col-11 col-md-10 col-xl-8 mx-auto">
+          
+            <!-- Title -->
+            <h6 class="fst-italic text-uppercase display-6">
+              Bérelje ki álmai autóját!
+            </h6>
+
+            <!-- Content -->
+            <p class="text-muted fs-5 fst-italic px-4 mt-3">          	
+              Autót bérelni csak regisztrált felhasználóknak lehet. Ha van már felhasználói fiókja, jelentkezzen be, ha nincs, kérjük regisztráljon!
+            </p>
+          </div>
+        </div>
+
+        <!-- Row tab buttons -->
+        <div class="row mt-3">
+          <hr>
+
+          <!-- Tab buttons -->
+          <ul id="form-tab"
+              class="nav nav-pills justify-content-center mt-3" 
+              role="tablist">
+
+            <!-- Rent a car -->
+            <li class="nav-item nav-item-tab mx-2 pb-1 col-12 col-md-auto text-center"
+                role="presentation">
+
+              <!-- Button -->
+              <button id="form-rent-tab" 
+                      class="btn btn-outline-secondary ms-2 mb-2 btn-common active"
+                      data-bs-toggle="pill"
+                      data-bs-target="#form-rent"
+                      role="tab" 
+                      type="button" 
+                      aria-controls="form-rent"
+                      aria-selected="true">
+                Autó bérlése
+              </button>
+            </li>
+
+            <!-- Login -->
+            <li class="nav-item nav-item-tab mx-2 pb-1 col-12 col-md-auto text-center"
+                role="presentation">
+
+              <!-- Button -->
+              <button id="form-login-tab" 
+                      class="btn btn-outline-secondary ms-2 mb-2 btn-common"
+                      data-bs-toggle="pill"
+                      data-bs-target="#form-login"
+                      role="tab" 
+                      type="button" 
+                      aria-controls="form-login"
+                      aria-selected="false">
+                Bejelenkezés
+              </button>
+            </li>
+
+            <!-- Register -->
+            <li class="nav-item nav-item-tab mx-2 pb-1 col-12 col-md-auto text-center"
+                role="presentation">
+
+              <!-- Button -->
+              <button id="form-register-tab" 
+                      class="btn btn-outline-secondary ms-2 mb-2 btn-common"
+                      data-bs-toggle="pill"
+                      data-bs-target="#form-register"
+                      role="tab" 
+                      type="button" 
+                      aria-controls="form-register"
+                      aria-selected="false">
+                Regisztráció
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Row tab content -->
+        <div class="row mt-3">
+
+          <!-- Tab content -->
+          <div class="tab-content">
+
+            <!-- Rent a car panel -->
+            <div id="form-rent" 
+                 class="tab-pane fade p-3 text-center show active"
+                 role="tabpanel"
+                 aria-labelledby="form-rent-tab">
+
+              <!-- Fieldset -->
+              <fieldset>
+
+                <!-- Title -->
+                <legend class="w-100 text-center">
+                  <h4 >
+                    <span><i class="fas fa-car"></i></span>
+                    <span>Autó bérlése</span>
+                  </h4>
+                </legend>
+
+                <!-- Rent a car form -->
+                <form id="rent-form" 
+                      class="w-25 d-inline-block"       
+                      action="#">
+
+                  <!-- Rent car -->
+                  <div id="rent-car"
+                     class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="select-car" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Autó:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Select car -->
+                    <select id="select-car" 
+                            class="form-select"
+                            required>
+                      <option value="" selected hidden>Választás</option>
+                      <option value="01">Aston Martin Valkyrie</option>
+                      <option value="02">Audi RS 7 Sportback</option>
+                      <option value="03">BMW M5</option>
+                      <option value="04">Bugatti Chiron</option>
+                      <option value="05">Bugatti Chiron Super Sport 300+</option>
+                      <option value="06">Bugatti Veyron</option>
+                      <option value="07">Bugatti Veyron Super Sport</option>
+                      <option value="08">Ferrari 812 SuperFast</option>
+                      <option value="09">Ford GT</option>
+                      <option value="10">Hennessey Venom F5</option>
+                      <option value="11">Hennessey Venom GT</option>
+                      <option value="12">Koenigsegg Agera R</option>
+                      <option value="13">Koenigsegg Agera RS</option>
+                      <option value="14">Koenigsegg Gemera</option>
+                      <option value="15">Koenigsegg Jesko Absolut</option>
+                      <option value="16">Lamborghini Sian Roadster</option>
+                      <option value="17">McLaren Speedtail</option>
+                      <option value="18">Mercedes-AMG One</option>
+                      <option value="19">Pagani Huayra BC Roadster</option>
+                      <option value="20">Porsche 911 Turbo Cabrio</option>
+                      <option value="21">Rimac Concept One</option>
+                      <option value="22">SSC Tuatara</option>
+                      <option value="23">SSC Ultimate Aero</option>
+                      <option value="24">Trabant - tuning</option>
+                    </select>
+                  </div>
+
+                  <!-- Rent start -->
+                  <div id="date-start"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="rent-start" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Tól:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input rent start -->
+                    <input id="rent-start" 
+                           type="date" 
+                           class="form-control col-12 col-md-6"
+                           spellcheck="false" 
+                           autocomplete="off"
+                           required>
+                  </div>
+
+                  <!-- Rent end -->
+                  <div id="date-end"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="rent-end" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Ig:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input rent end -->
+                    <input id="rent-end" 
+                           type="date" 
+                           class="form-control col-12 col-md-6"
+                           spellcheck="false" 
+                           autocomplete="off"
+                           required>
+                  </div>
+
+                  <!-- Buttons -->
+                  <div class="btn-group mt-4 justify-content-center w-100">
+                  
+                    <!-- Login button -->
+                    <button id="rent" 
+                            type="button" 
+                            class="btn btn-primary mx-2 shadow-sm btn-common"
+                            onclick="alert('Foglalás!')">
+                      Foglalás
+                    </button>
+                  
+                    <!-- Cancel button -->
+                    <button id="rent-cancel" 
+                            type="button" 
+                            class="btn btn-secondary mx-2 shadow-sm btn-common"
+                            onclick="alert('Mégsem!')">
+                      Mégsem
+                    </button>
+                  </div>
+                </form>
+              </fieldset>
+
+              <!-- Price list -->
+              <div class="row mt-4">
+                <hr>
+                <div id="price-list"
+                     class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-6 mx-auto">
+
+                  <!-- Table -->
+                  <table class="table table-sm shadow caption-top
+                                table-bordered table-striped table-hover">
+
+                    <!-- Caption -->
+                    <caption class="display-6 text-center">Árjegyzék</caption>
+
+                    <!-- Head -->
+                    <thead class="table-light">
+                      <tr>
+                        <th class="text-end">#</th>
+                        <th class="text-start">Név</th>
+                        <th class="text-end">Ft/Nap</th>
+                      </tr>
+                    </thead>
+
+                    <!-- Body -->
+                    <tbody>
+                      <tr>
+                        <td class="text-end">1</td>
+                        <td class="text-start">Trabant - tuning</td>
+                        <td class="text-end">25 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">2</td>
+                        <td class="text-start">Porsche 911 Turbo Cabrio</td>
+                        <td class="text-end">30 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">3</td>
+                        <td class="text-start">BMW M5</td>
+                        <td class="text-end">33 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">4</td>
+                        <td class="text-start">Audi RS 7 Sportback</td>
+                        <td class="text-end">35 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">5</td>
+                        <td class="text-start">Ferrari 812 SuperFast</td>
+                        <td class="text-end">43 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">6</td>
+                        <td class="text-start">Ford GT</td>
+                        <td class="text-end">48 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">7</td>
+                        <td class="text-start">Mercedes-AMG One</td>
+                        <td class="text-end">51 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">8</td>
+                        <td class="text-start">Lamborghini Sian Roadster</td>
+                        <td class="text-end">55 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">9</td>
+                        <td class="text-start">Rimac Concept One</td>
+                        <td class="text-end">60 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">10</td>
+                        <td class="text-start">Pagani Huayra BC Roadster</td>
+                        <td class="text-end">65 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">11</td>
+                        <td class="text-start">Koenigsegg Gemera</td>
+                        <td class="text-end">70 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">12</td>
+                        <td class="text-start">Aston Martin Valkyrie</td>
+                        <td class="text-end">72 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">13</td>
+                        <td class="text-start">McLaren Speedtail</td>
+                        <td class="text-end">75 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">14</td>
+                        <td class="text-start">Bugatti Veyron</td>
+                        <td class="text-end">80 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">15</td>
+                        <td class="text-start">SSC Ultimate Aero</td>
+                        <td class="text-end">85 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">16</td>
+                        <td class="text-start">Koenigsegg Agera R</td>
+                        <td class="text-end">90 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">17</td>
+                        <td class="text-start">Bugatti Chiron</td>
+                        <td class="text-end">100 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">18</td>
+                        <td class="text-start">Bugatti Veyron Super Sport</td>
+                        <td class="text-end">120 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">19</td>
+                        <td class="text-start">Hennessey Venom GT</td>
+                        <td class="text-end">135 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">20</td>
+                        <td class="text-start">Koenigsegg Agera RS</td>
+                        <td class="text-end">145 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">21</td>
+                        <td class="text-start">SSC Tuatara</td>
+                        <td class="text-end">190 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">22</td>
+                        <td class="text-start">Bugatti Chiron Super Sport 300+</td>
+                        <td class="text-end">200 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">23</td>
+                        <td class="text-start">Hennessey Venom F5</td>
+                        <td class="text-end">220 000</td>
+                      </tr>
+                      <tr>
+                        <td class="text-end">24</td>
+                        <td class="text-start">Koenigsegg Jesko Absolut</td>
+                        <td class="text-end">250 000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Login panel -->
+            <div id="form-login" 
+                 class="tab-pane fade p-3 text-center"
+                 role="tabpanel"
+                 aria-labelledby="form-login-tab">
+
+              <!-- Fieldset -->
+              <fieldset>
+
+                <!-- Title -->
+                <legend class="w-100 text-center">
+                  <h4 >
+                    <span><i class="fas fa-users"></i></span>
+                    <span>Bejelentkezés</span>
+                  </h4>
+                </legend>
+
+                <!-- Login form -->
+                <form id="login-form" 
+                      class="w-25 d-inline-block"       
+                      action="#">
+
+                  <!-- User -->
+                  <div id="user-user" 
+                       class="input-group input-row mb-3">
+
+                    <!-- Icon -->
+                    <div class="input-group-prepend">
+                      <span class="input-group-text h-100">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </div>
+                  
+                    <!-- Input user -->
+                    <input id="user" 
+                           type="text" 
+                           class="form-control" 
+                           spellcheck="false" 
+                           autocomplete="off" 
+                           placeholder="felhasználó" 
+                           required
+                           maxlength="20">
+                  </div>
+                
+                  <!-- Password -->
+                  <div id="user-password" 
+                       class="input-group input-row mb-2">
+
+                    <!-- Icon -->
+                    <div class="input-group-prepend">
+                        <span class="input-group-text h-100">
+                          <i class="fas fa-key"></i>
+                        </span>
+                    </div>
+                  
+                    <!-- Input password -->
+                    <input id="login-password" 
+                           type="password" 
+                           class="form-control input-password" 
+                           spellcheck="false" 
+                           autocomplete="off" 
+                           placeholder="jelszó" 
+                           required
+                           maxlength="20">
+                  </div>
+
+                  <!-- Show/Hide password -->
+                  <div class="row mb-3">
+                    <div class="col">
+                      <div class="form-check text-start">
+                        <input id="login-display-password" 
+                               class="form-check-input" 
+                               type="checkbox" 
+                               value="">
+                        <label class="form-check-label" 
+                               for="login-display-password">
+                          jelszót megjelenít
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Buttons -->
+                  <div class="btn-group mt-4 text-center w-100">
+                  
+                    <!-- Login button -->
+                    <button id="accept" 
+                            type="button" 
+                            class="btn btn-primary mx-2 shadow-sm btn-common"
+                            onclick="alert('Bejelentkezés!')">
+                      Bejelentkezés
+                    </button>
+                  
+                    <!-- Cancel button -->
+                    <button id="login-cancel" 
+                            type="button" 
+                            class="btn btn-secondary mx-2 shadow-sm btn-common"
+                            onclick="alert('Mégsem!')">
+                      Mégsem
+                    </button>
+                  </div>
+                </form>
+              </fieldset>
+            </div>
+
+            <!-- Register panel -->
+            <div id="form-register" 
+                 class="tab-pane fade p-3 text-center"
+                 role="tabpanel"
+                 aria-labelledby="form-register-tab">
+
+              <!-- Fieldset -->
+              <fieldset>
+
+                <!-- Title -->
+                <legend class="w-100 text-center">
+                  <h4 >
+                    <span><i class="fas fa-users ms-5"></i></span>
+                    <span>Regisztráció</span>
+                  </h4>
+                </legend>
+
+                <!-- Register form -->
+                <form id="register-form" 
+                      class="w-25 d-inline-block"       
+                      action="#">
+
+                  <!-- User prefix name -->
+                  <div id="user-prefixName"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="prefixName" 
+                             class="col-form-label">
+                        Előtag:
+                      </label>
+                    </div>
+                  
+                    <!-- Input user prefix name -->
+                    <input id="prefixName" 
+                           type="text" 
+                           class="form-control col-12 col-md-6"
+                           spellcheck="false"
+                           placeholder="előtag"
+                           autocomplete="off"
+                           maxlength="20">
+                  </div>
+                
+                  <!-- User first name -->
+                  <div id="user-firstName" 
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="firstName" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Keresztnév:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input user first name -->
+                    <input id="firstName" 
+                           type="text" 
+                           class="form-control col-12 col-md-6"
+                           spellcheck="false"
+                           placeholder="keresztnév"
+                           autocomplete="off"
+                           required
+                           maxlength="50">
+                  </div>
+                
+                  <!-- User middle name -->
+                  <div id="user-middleName"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="middleName" 
+                             class="col-form-label">
+                        Középsőnév:
+                      </label>
+                    </div>
+                  
+                    <!-- Input user middle name -->
+                    <input id="middleName" 
+                           type="text" 
+                           class="form-control col-12 col-md-6" 
+                           spellcheck="false"
+                           placeholder="középsőnév" 
+                           autocomplete="off"
+                           maxlength="50">
+                  </div>
+                
+                  <!-- User last name -->
+                  <div id="user-lastName"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="lastName" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Vezetéknév:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input user last name -->
+                    <input id="lastName" 
+                           type="text" 
+                           class="form-control col-12 col-md-6" 
+                           spellcheck="false"
+                           placeholder="vezetéknév" 
+                           autocomplete="off"
+                           required
+                           maxlength="50">
+                  </div>
+                
+                  <!-- User postfix name -->
+                  <div id="user-postfixName"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="postfixName" 
+                             class="col-form-label">
+                        Utótag:
+                      </label>
+                    </div>
+                  
+                    <!-- Input user postfix name -->
+                    <input id="postfixName" 
+                           type="text" 
+                           class="form-control col-12 col-md-6"
+                           spellcheck="false"
+                           placeholder="utótag" 
+                           autocomplete="off"
+                           maxlength="20">
+                  </div>
+                  <hr>
+                
+                  <!-- User gender -->
+                  <div id="user-gender-type"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label class="col-form-label">
+                        <span>Neme:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- checkbox -->
+                    <div class="col-auto mt-2">
+                      <input class="form-check-input" 
+                             type="radio" 
+                             id="user-mail"  
+                             name="radioBtn1">
+                      <label class="form-check-label ms-1" 
+                             for="user-mail">
+                        Férfi
+                      </label>
+                    </div>
+                  
+                    <!-- checkbox -->
+                    <div class="col-auto mt-2 ps-3">
+                      <input class="form-check-input" 
+                             type="radio" 
+                             id="user-femail"          
+                             name="radioBtn2">
+                      <label class="form-check-label ms-1" 
+                             for="user-femail">
+                        Nő
+                      </label>
+                    </div>
+                  </div>
+                
+                  <!-- User birthday -->
+                  <div id="user-birthday"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="birthday" 
+                             class="col-form-label">
+                        <span>Született:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input birthday -->
+                    <input id="birthday" 
+                           type="date" 
+                           class="form-control col-12 col-md-6"
+                           spellcheck="false"
+                           autocomplete="off">
+                  </div>
+                
+                  <!-- Email -->
+                  <div id="user-email"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="email" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Email:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input email -->
+                    <input id="email" 
+                           type="email" 
+                           class="form-control col-12 col-md-6"
+                           spellcheck="false"
+                           placeholder="email" 
+                           autocomplete="off"
+                           required
+                           maxlength="50">
+                  </div>
+                  <hr>
+                
+                  <!-- User login name -->
+                  <div id="user-loginName"
+                       class="input-item input-group input-row mb-3">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="loginName" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Felhasználónév:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input user login name -->
+                    <input id="loginName" 
+                           type="text" 
+                           class="form-control col-12 col-md-6"
+                           spellcheck="false" 
+                           placeholder="felhasználónév"
+                           autocomplete="off"
+                           required
+                           maxlength="20">
+                  </div>
+                
+                  <!-- Password -->
+                  <div id="user-passwordFirst"
+                       class="input-item input-group input-row mb-2">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="password" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Jelszó:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input password -->
+                    <input id="password" 
+                           type="password" 
+                           class="form-control input-password col-12 col-md-6" 
+                           spellcheck="false"
+                           placeholder="jelszó"
+                           autocomplete="off"
+                           required
+                           maxlength="20">
+                  </div>
+
+                  <!-- Password again -->
+                  <div id="user-passwordAgain"
+                       class="input-item input-group input-row mb-2">
+
+                    <!-- Label -->
+                    <div class="col-12 col-md-6 text-start text-md-end px-0 px-md-3">
+                      <label for="passwordAgain" 
+                             class="col-form-label">
+                        <span class="text-danger fw-bold">*</span>
+                        <span>Jelszó mégegyszer:</span>
+                      </label>
+                    </div>
+                  
+                    <!-- Input password -->
+                    <input id="passwordAgain" 
+                           type="password" 
+                           class="form-control input-password col-12 col-md-6"
+                           spellcheck="false"
+                           placeholder="jelszó mégegyszer" 
+                           autocomplete="off"
+                           required
+                           maxlength="20">
+                  </div>
+
+                  <!-- Show/Hide password -->
+                  <div class="row mb-3">
+
+                    <!-- Empty col -->
+                    <div class="col-6"></div>
+
+                    <!-- Checkbox -->
+                    <div class="col-md-6 ps-0">
+                      <div class="form-check text-start">
+                        <input id="display-password" 
+                               class="form-check-input" 
+                               type="checkbox" 
+                               value="">
+
+                        <!-- Label -->
+                        <label class="form-check-label" 
+                               for="display-password">
+                          jelszót megjelenít
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                
+                  <!-- Buttons -->
+                  <div class="input-item btn-group mt-4 justify-content-center w-100">
+
+                    <!-- Send button -->
+                    <button id="send" 
+                            type="button"
+                            class="btn btn-primary mx-2 shadow-sm btn-common"
+                            onclick="alert('Elküld!')">
+                      Elküld
+                    </button>
+                  
+                    <!-- Cancel button -->
+                    <button id="register-cancel" 
+                            type="button" 
+                            class="btn btn-secondary mx-2 shadow-sm btn-common"
+                            onclick="alert('Мégsem!')">
+                      Мégsem
+                    </button>
+                  </div>
+                </form>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <!-- Club -->
+        <div class="row mt-3 text-center">
+          <hr>
+          
+          <!-- Grid -->
+          <div class="col-11 col-md-10 col-xl-8 mx-auto mt-3">
+            
+            <!-- Image -->
+            <img class="club-member-img mb-2" 
+                 src="./image/club-member.png" 
+                 alt="club member">
+
+            <!-- Title -->
+            <h6 id="club-member-title" 
+                class="fst-italic text-uppercase display-6">
+              Legyen klubtag
+            </h6>
+          
+            <!-- Content -->
+            <p class="text-muted fs-5 fst-italic px-4 mt-3">          	
+              Mostantól kihasználhatja vadonatúj tagsági programunkat. Gyűjtsön pontokat minden egyes autó bérlése után. Szerezzen kedvezményeket és exkluzív kiváltságokat. A részletekről érdeklődjön munkatársainktól!
+            </p>
+          </div>
+          <hr class="mt-3">
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="availability" 
+              class="container-fluid bg-light mt-3 pt-3">
+
+        <!-- School -->
+        <div class="row">
+        
+          <!-- Logo -->
+          <div class="col col-3 col-xl-1">
+            <div class="logo bg-img bg-img-contain float-end"></div>
+          </div>
+        
+          <!-- Name -->
+          <ul class="col col-9 col-xl-5 text-start list-unstyled mb-0 mt-1">
+            <li>
+              <h5 class="fst-italic mb-1">
+                Hódmezővásárhelyi SZC
+              </h5>
+            </li>
+            <li>
+              <h6 class="fst-italic mb-1">
+                Makói Návay Lajos Technikum és Kollégium
+              </h6>
+            </li>
+            <li class="fw-lighter fs-075">
+              OM azonosító: 203039/007
+            </li>
+          </ul>
+        
+          <!-- Contact -->
+          <div class="col col-12 col-md-6 col-xl-3 ps-5 ps-md-0 text-lg-start mt-3 mt-xl-0">
+          
+            <!-- Contact lis -->
+            <ul class="text-start list-unstyled mb-0 ms-md-5">
+            
+              <!-- Address -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   target="_blank" title="google maps"
+                   href="https://www.google.com/maps/place/HSZC+Mak%C3%B3i+N%C3%A1vay+Lajos+Technikum+%C3%A9s+Koll%C3%A9gium/@46.2136337,20.4733232,17z/data=!3m1!4b1!4m5!3m4!1s0x4744f602b445c0b9:0x6ecc2b88ac500ef!8m2!3d46.21363!4d20.4755119">
+                  <i class="fas fa-home me-2"></i>
+                  <span>6900 Makó, Posta u. 4-6</span>
+                </a>
+              </li>
+            
+              <!-- Email -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   target="_blank" title="email" 
+                   href="mailto:kerititkarsag@gmail.com">
+                  <i class="fas fa-envelope me-2"></i>
+                  <span>kerititkarsag@gmail.com</span>
+                </a>
+              </li>
+            
+              <!-- Phone -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   target="_blank" title="phone" 
+                   href="tel:+3662510917">
+                  <i class="fas fa-phone me-2"></i>
+                  <span>(+36 62) 510-917</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
+          <!-- Web/Social media -->
+          <div class="col col-12 col-md-6 col-xl-3 ps-5 ps-md-0 text-lg-start mt-0 mt-md-3 mt-xl-0">
+          
+            <!-- Web/Social media list -->
+            <ul class="text-start list-unstyled mb-0">
+            
+              <!-- Web -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   href="https://www.keri.mako.hu/" 
+                   title="web" target="_blank">
+                  <i class="fas fa-globe me-2"></i>
+                  <span>www.keri.mako.hu</span>
+                </a>
+              </li>
+            
+              <!-- Facebook -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   href="https://www.facebook.com/makokeri/" 
+                   title="facebook" target="_blank">
+                  <i class="fab fa-facebook-f me-2"></i>
+                  <span>makokeri</span>
+                </a>
+              </li>
+            
+              <!-- Instagram -->
+              <li>
+                <a class="text-decoration-none text-muted" 
+                   href="http://www.instagram.com/makokeri/" 
+                   title="instagram" target="_blank">
+                  <i class="fab fa-instagram me-2"></i>
+                  <span>makokeri</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright row mt-0">
+          <hr class="mt-3 mb-1">
+          <p class="fw-lighter fs-075 mb-2 w-100 text-center"> 
+            &copy; Copyright&nbsp;&nbsp;2021-2022 Keri Informatika, Makó
+          </p>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Header -->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+      <!-- Container -->
+      <div class="container-fluid">
+
+        <!-- Title -->
+        <a class="navbar-brand fs-6 fw-bold fst-italic text-muted px-2" 
+           href="#top-page">
+          <span id="lux-name" class="fs-5 me-1">LUX</span>
+          <span>Autó</span>
+        </a>
+
+        <!-- Hamburger icon -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mt-2 mt-sm-0">
+
+            <!-- Menu item -->
+            <li class="nav-item px-2">
+              <a class="nav-link" href="home.html">
+                <i class="fas fa-home fs-5 me-1"></i>
+                <span>Kezdőlap</span>
+              </a>
+            </li>
+
+            <!-- Menu item -->
+            <li class="nav-item px-2">
+              <a class="nav-link" href="cars.html">
+                <i class="fas fa-car fs-5 me-1"></i>
+                <span>Autóink</span>
+              </a>
+            </li>
+
+            <!-- Menu item -->
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#availability">
+                <i class="fas fa-map-marker-alt fs-5 me-1"></i>
+                <span>Elérhetőség</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Application components -->
+  <script src="./components/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
