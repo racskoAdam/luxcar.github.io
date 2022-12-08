@@ -1,7 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
---Fasz
+--Fasz anyad
 -- Gép: 127.0.0.1
 -- Létrehozás ideje: 2022. Nov 28. 21:14
 -- Kiszolgáló verziója: 10.4.6-MariaDB
