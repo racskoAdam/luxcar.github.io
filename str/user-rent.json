@@ -1,0 +1,15 @@
+{
+    "name": "Bérlések",
+    "db": "luxcar",
+    "tbl": "color",
+    "query": "SELECT `id`, `carID`, `rent`, `start`, `end`, `discount`, `valid` FROM `user-rent`",
+    "label": [
+      "Azonosító",
+      "Autó Azonosító",
+      "Bérlés",
+      "-tól",
+      "-ig",
+      "Kedvezmény",
+      "Érvényes"
+    ]
+  }

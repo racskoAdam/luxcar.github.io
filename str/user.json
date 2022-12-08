@@ -1,0 +1,19 @@
+{
+  "name" : "Felhasználók",
+  "db": "luxcar",
+  "tbl": "user",
+  "query": "SELECT `id`, `type`, `prefix_name`, `first_name`, `middle_name`, `last_name`, `suffix_name`, `born`, `gender`, `email`, `password`, `valid`, `last_logon`, `attempts`, `last_attempt` FROM `user`",
+  "label":[
+    "Azonosító",
+    "Tipus",
+    "Előnév",
+    "Keresztnév",
+    "Középső név",
+    "Vezetéknév",
+    "Utónév",
+    "Születési év",
+    "Nem",
+    "Email",
+    "Jelszó"
+  ]
+}
